@@ -1,10 +1,16 @@
 global using System;
+global using System.Collections.Generic;
+global using System.Globalization;
+global using System.Linq;
+global using System.Net;
+global using System.Security.Claims;
 global using System.Net.Http;
 global using System.Net.Http.Json;
 global using System.Threading.Tasks;
 global using Microsoft.AspNetCore.Builder;
 global using Microsoft.AspNetCore.Cors;
+global using Microsoft.AspNetCore.Http;
 global using Microsoft.Extensions.DependencyInjection;
-global using MinimalWeather;
 global using Microsoft.Identity.Web;
 global using Microsoft.AspNetCore.Authorization;
+global using MinimalWeather;

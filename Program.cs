@@ -9,11 +9,12 @@ app.UseCors();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapGet("/secure", [EnableCors("allowAny")] () =>
+app.MapGet("/secure", [EnableCors("allowAny")] (HttpContext context) => 
 {
-    //http.
+    AuthHelper.UserHasAnyAcceptedScopes(context, new string[] {"access_as_user"});
     return "hello from secure";
 }).RequireAuthorization();
+
 
 app.MapGet("/insecure", [EnableCors("allowAny")] () =>
 {

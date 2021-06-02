@@ -11,6 +11,7 @@ app.UseAuthorization();
 
 app.MapGet("/secure", [EnableCors("allowAny")] () =>
 {
+    //http.
     return "hello from secure";
 }).RequireAuthorization();
 

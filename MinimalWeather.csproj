@@ -10,7 +10,7 @@
     <PackageReference Include="Microsoft.Identity.Web" Version="1.11.0" />
     <PackageReference Include="Microsoft.Net.Compilers.Toolset" Version="4.0.0-2.21275.18">
       <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
   </ItemGroup>
 

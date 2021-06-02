@@ -1,0 +1,37 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Authentication tour",
+  "steps": [
+    {
+      "file": "Program.cs",
+      "description": "Add CORS to allow calls from any domain",
+      "line": 2
+    },
+    {
+      "file": "Program.cs",
+      "description": "Add Authentication with Microsoft.Identity.Web using the default configuration found in the `appsettings.json`",
+      "line": 3
+    },
+    {
+      "file": "Program.cs",
+      "description": "Ensure to add Authorization!",
+      "line": 4
+    },
+    {
+      "file": "Program.cs",
+      "description": "configure the middleware to use authentication and authorization",
+      "line": 9
+    },
+    {
+      "file": "Program.cs",
+      "description": "Turn this endpoint into a secure one by using the `RequireAuthorization()` directive",
+      "line": 15
+    },
+    {
+      "file": "appsettings.json",
+      "description": "Azure AD settings for Authentication",
+      "line": 1
+    }
+  ],
+  "ref": "main"
+}
